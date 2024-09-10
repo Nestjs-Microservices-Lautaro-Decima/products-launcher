@@ -11,3 +11,6 @@
 	path = payments-ms
 	url = https://github.com/Nestjs-Microservices-Lautaro-Decima/payments-ms.git
 	
+[submodule "auth-ms"]
+	path = auth-ms
+	url = https://github.com/Nestjs-Microservices-Lautaro-Decima/auth-ms.git
