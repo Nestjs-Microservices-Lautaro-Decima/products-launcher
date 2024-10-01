@@ -51,3 +51,11 @@ Si se hace al revés, se perderán las referencias de los sub-módulos en el rep
 ```
 docker-compose -f docker-compose.prod.yml build
 ```
+
+## Generar imagenes para subir a Google Cloud:
+
+`docker-compose -f docker-compose.prod.yml build`
+
+Luego ir pusheando de a una:
+
+`docker image push southamerica-east1-docker.pkg.dev/microservicios-nestjs/image-registry/{nombre ms}`
