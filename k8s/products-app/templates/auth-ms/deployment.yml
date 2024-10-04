@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: auth-ms
+  name: auth-ms
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: auth-ms
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: auth-ms
+    spec:
+      containers:
+        - image: southamerica-east1-docker.pkg.dev/microservicios-nestjs/image-registry/auth-ms
+          name: auth-ms
+          env:
+            - name: PORT
+              value: "3000"
+            - name: NATS_SERVERS
+              values: "nats://nats"
+          resources: {}
+status: {}
