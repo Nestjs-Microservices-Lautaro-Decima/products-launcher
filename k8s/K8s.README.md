@@ -22,7 +22,8 @@ kubectl create deployment <nombre> --image=<registro/url/imagen> --dry-run=clien
 
 ```
 kubectl create service clusterip <nombre> --tcp=<8888> --dry-run=client -o yaml > service.yml
-**kubectl create service nodeport <nombre> --tcp=<3000> --dry-run=client -o yaml > service.yml**
+
+kubectl create service nodeport <nombre> --tcp=<3000> --dry-run=client -o yaml > service.yml
 ```
 
 - **clusterip**: solo se puede acceder desde dentro del cluster
@@ -82,4 +83,10 @@ kubectl get secret <nombre> -o yaml > <nombre>.yml
 
 ```
 kubectl create -f <nombre>.yml
+```
+
+# Levantar de nuevo cluster:
+
+```
+kubectl rollout restart deployment
 ```
