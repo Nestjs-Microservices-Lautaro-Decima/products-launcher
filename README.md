@@ -1,3 +1,7 @@
+# Estructura del proyecto:
+
+![Estructura del proyecto](./microservicios-nestjs.jpg)
+
 ## Dev
 
 1. Clonar el repositorio
